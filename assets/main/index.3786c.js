@@ -1049,18 +1049,18 @@ window.__require = function e(t, a, i) {
                     }, this)))
                 },
                 ChasePlayer: function (e) {
-                    e.stopAllActions();
-                    var t = e.position
-                        , a = this.playerNode.position
-                        , i = Math.atan2(a.y - t.y, a.x - t.x)
-                        , o = e.speed
-                        , n = this.carmeraNode.getChildByName("MoveCamera").getComponent(cc.Camera).zoomRatio
-                        , c = s.getRandomNum(100 / n, 200 / n, !1)
-                        , r = c / o
-                        , h = cc.misc.radiansToDegrees(i) - 90;
-                    e.runAction(cc.sequence(cc.spawn(cc.moveBy(r, c * Math.cos(i), c * Math.sin(i)), cc.rotateTo(2 * r / 3, h)), cc.callFunc(function () {
-                        this.ChasePlayer(e)
-                    }, this)))
+                    // e.stopAllActions();
+                    // var t = e.position
+                    //     , a = this.playerNode.position
+                    //     , i = Math.atan2(a.y - t.y, a.x - t.x)
+                    //     , o = e.speed
+                    //     , n = this.carmeraNode.getChildByName("MoveCamera").getComponent(cc.Camera).zoomRatio
+                    //     , c = s.getRandomNum(100 / n, 200 / n, !1)
+                    //     , r = c / o
+                    //     , h = cc.misc.radiansToDegrees(i) - 90;
+                    // e.runAction(cc.sequence(cc.spawn(cc.moveBy(r, c * Math.cos(i), c * Math.sin(i)), cc.rotateTo(2 * r / 3, h)), cc.callFunc(function () {
+                    //     this.ChasePlayer(e)
+                    // }, this)))
                 },
                 EscapePlayer: function (e) {
                     e.stopAllActions();
@@ -1135,32 +1135,32 @@ window.__require = function e(t, a, i) {
                                     this.playerNode.getChildByName("haigui").scaleX = 0,
                                     this.playerNode.getChildByName("haigui").scaleY = 0,
                                     this.playerNode.getChildByName("haigui").active = !0,
-                                    this.CameraChangeZoomRatio(e, .35),
+                                    this.CameraChangeZoomRatio(e, .25),
                                     this.myFish = this.playerNode.getChildByName("haigui")) : 4 == t ? (this.playerNode.getChildByName("haigui").active = !1,
                                         this.playerNode.getChildByName("xiaojinyu").scaleX = 0,
                                         this.playerNode.getChildByName("xiaojinyu").scaleY = 0,
                                         this.playerNode.getChildByName("xiaojinyu").active = !0,
                                         this.myFish = this.playerNode.getChildByName("xiaojinyu"),
-                                        this.CameraChangeZoomRatio(e, .35)) : 5 == t ? (this.playerNode.getChildByName("xiaojinyu").active = !1,
+                                        this.CameraChangeZoomRatio(e, .25)) : 5 == t ? (this.playerNode.getChildByName("xiaojinyu").active = !1,
                                             this.playerNode.getChildByName("jinli").scaleX = 0,
                                             this.playerNode.getChildByName("jinli").scaleY = 0,
                                             this.playerNode.getChildByName("jinli").active = !0,
-                                            this.CameraChangeZoomRatio(e, .35),
+                                            this.CameraChangeZoomRatio(e, .25),
                                             this.myFish = this.playerNode.getChildByName("jinli")) : 6 == t ? (this.playerNode.getChildByName("jinli").active = !1,
                                                 this.playerNode.getChildByName("dianman").scaleX = 0,
                                                 this.playerNode.getChildByName("dianman").scaleY = 0,
                                                 this.playerNode.getChildByName("dianman").active = !0,
                                                 this.myFish = this.playerNode.getChildByName("dianman"),
-                                                this.CameraChangeZoomRatio(e, .35)) : 7 == t ? (this.playerNode.getChildByName("dianman").active = !1,
+                                                this.CameraChangeZoomRatio(e, .25)) : 7 == t ? (this.playerNode.getChildByName("dianman").active = !1,
                                                     this.playerNode.getChildByName("shayu").scaleX = 0,
                                                     this.playerNode.getChildByName("shayu").scaleY = 0,
                                                     this.playerNode.getChildByName("shayu").active = !0,
-                                                    this.CameraChangeZoomRatio(e, .35),
+                                                    this.CameraChangeZoomRatio(e, .25),
                                                     this.myFish = this.playerNode.getChildByName("shayu")) : 8 == t ? (this.playerNode.getChildByName("shayu").active = !1,
                                                         this.playerNode.getChildByName("jingyu").scaleX = 0,
                                                         this.playerNode.getChildByName("jingyu").scaleY = 0,
                                                         this.playerNode.getChildByName("jingyu").active = !0,
-                                                        this.CameraChangeZoomRatio(e, .35),
+                                                        this.CameraChangeZoomRatio(e, .25),
                                                         this.myFish = this.playerNode.getChildByName("jingyu")) : 9 == t ? (this.playerNode.getChildByName("jingyu").active = !1,
                                                             this.playerNode.getChildByName("jiao").scaleX = 0,
                                                             this.playerNode.getChildByName("jiao").scaleY = 0,
