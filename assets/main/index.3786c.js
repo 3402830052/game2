@@ -973,7 +973,7 @@ window.__require = function e(t, a, i) {
                         this.changeSize(i),
                             i.typeID = a + 1;
                         var o = this.carmeraNode.getChildByName("MoveCamera").getComponent(cc.Camera).zoomRatio;
-                        i.speed = (200 - 15 * i.typeID) / o;
+                        i.speed = (100 - 15 * i.typeID) / o;
                         var n = this.getEnemyPos(i);
                         n ? (this.enemyNode.addChild(i, 1),
                             i.setPosition(n),
@@ -1006,7 +1006,7 @@ window.__require = function e(t, a, i) {
                             this.changeSize(s),
                                 s.typeID = n + 1;
                             var c = this.carmeraNode.getChildByName("MoveCamera").getComponent(cc.Camera).zoomRatio;
-                            s.speed = (200 - 10 * s.typeID) / c;
+                            s.speed = (200 - 10 * s.typeID);
                             var r = this.getEnemyPos(s);
                             r ? (this.enemyNode.addChild(s, 1),
                                 s.setPosition(r),
